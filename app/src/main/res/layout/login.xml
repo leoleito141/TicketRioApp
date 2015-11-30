@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/login">
+
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/mailLogin"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:hint="Email"
+        android:textAlignment="center"
+        android:textColorHint="#1a4a92"
+        android:singleLine="false"
+        android:selectAllOnFocus="false" />
+
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordLogin"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:hint="Contraseña"
+        android:textColorHint="#1a4a92"
+        android:textIsSelectable="false"
+        android:visibility="visible"
+        android:linksClickable="false"
+        android:longClickable="false" />
+
+    <Button
+        android:layout_width="213dp"
+        android:layout_height="35dp"
+        android:text="Login"
+        android:id="@+id/botonLogin"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="#45aaff"
+        android:backgroundTint="#45aaff"
+        android:breakStrategy="high_quality"
+        android:textColor="#1a4a92" />
+
+    <Button
+        android:id="@+id/botonRegistro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@null"
+        android:text="Regístrate"
+        android:textColor="#1a4a92"
+
+        android:textColorHint="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:singleLine="true" />
+
+
+
+
+
+</LinearLayout>

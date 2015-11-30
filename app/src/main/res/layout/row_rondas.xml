@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/textView2"
+            android:text="Ronda  "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="35dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/numRonda"
+            android:text="numRonda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="35dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+    </TableRow>
+
+
+</LinearLayout>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:id="@+id/linearLayout">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COMPRAR ENTRADA"
+            android:id="@+id/button"
+            android:background="#45aaff"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="330dp"
+        android:id="@+id/tableRow">
+
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/nadassssss"
+            android:text="Cantidad Entradas:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="0dp" />
+
+        <Spinner
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:background="#00ffffff" />
+
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="350dp">
+
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/nadasssss"
+            android:text="Precio: US$"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="60dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ce_Precio"
+            android:text="precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="370dp">
+
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/nadassss"
+            android:text="Entradas Disponibles:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="0dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ce_EntradasDisponibles"
+            android:text="cantEntradasDisp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="390dp">
+
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/nadasss"
+            android:text="Lugar:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="0dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ce_Estadio"
+            android:text="estadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="410dp">
+
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/nadass"
+            android:text="Fecha:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="0dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ce_Fecha"
+            android:text="fechacomp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="430dp">
+
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/nadas"
+            android:text="Ronda:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="0dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ce_Ronda"
+            android:text="numronda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+
+
+    </TableRow>
+
+    <TableRow
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="450dp">
+
+
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/nad"
+            android:text="Sexo:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="0dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ce_Sexo"
+            android:text="sexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="450dp"
+        android:orientation="horizontal"
+        android:layout_alignRight="@+id/buttonLogout"
+        android:layout_alignEnd="@+id/buttonLogout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ce_Deporte"
+            android:text="Deporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="0dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ce_Disciplina"
+            android:text="Disciplina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="30dp" />
+
+    </TableRow>
+
+
+
+    <Button
+        android:layout_width="213dp"
+        android:layout_height="35dp"
+        android:text="Comprar"
+        android:id="@+id/botonComprar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="104dp"
+        android:background="#45aaff"
+        android:backgroundTint="#45aaff"
+        android:breakStrategy="high_quality"
+        android:textColor="#1a4a92"
+        android:layout_alignTop="@+id/tableRow"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible"
+        android:background="@android:drawable/ic_lock_idle_charging" />
+
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/imageViewCompra"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

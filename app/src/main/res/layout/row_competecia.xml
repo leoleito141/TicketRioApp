@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/lugar"
+            android:text="Lugar:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/estadio"
+            android:text="estadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/textView1"
+            android:text="Precio: US$ "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/precio"
+            android:text="precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+    </TableRow>
+
+
+       <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/textView2"
+            android:text="Fecha:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/fechaCompetencia"
+            android:text="fechaCompetencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/Enreadas"
+            android:text="Entradas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cantentradasVendidas"
+            android:text="vendidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/separador"
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cantEntradas"
+            android:text="totales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|normal"
+            android:textSize="20dp"
+            android:textColor="#FF45AAFF"
+            android:layout_marginLeft="10dp" />
+    </TableRow>
+
+
+
+</LinearLayout>

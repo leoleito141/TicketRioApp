@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login">
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listRondas"
+        android:layout_below="@+id/buttonLogout"
+        android:layout_alignRight="@+id/buttonLogout"
+        android:layout_alignEnd="@+id/buttonLogout"
+        android:layout_marginBottom="150dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RONDAS"
+            android:id="@+id/button"
+            android:background="#45aaff"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible"
+        android:background="@android:drawable/ic_lock_idle_charging" />
+
+</RelativeLayout>
