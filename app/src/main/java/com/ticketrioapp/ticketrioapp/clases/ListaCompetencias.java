@@ -2,12 +2,14 @@ package com.ticketrioapp.ticketrioapp.clases;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -52,12 +54,14 @@ public class ListaCompetencias extends AppCompatActivity {
     private Context c;
     private ArrayList<WrapperCompetencia> competencias;
     private ListView listaCompetencias;
+    private Button botonCerrarSesion;
 
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lista_competencia);
         listaCompetencias = (ListView) findViewById(R.id.listCompetencias);
+        botonCerrarSesion = (Button)findViewById(R.id.buttonLogout);
 
         final String deporte = getIntent().getStringExtra("Deporte");
         final String sexo = getIntent().getStringExtra("Sexo");
@@ -102,7 +106,20 @@ public class ListaCompetencias extends AppCompatActivity {
 
         });
 
+        botonCerrarSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences sharedpreferences = getSharedPreferences(Login.MyPREFERENCES, Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedpreferences.edit();
+                editor.clear();
+                editor.commit();
 
+                Intent intent = new Intent(ListaCompetencias.this, Login.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+
+            } // cierra onclick
+        });
 
     }
 

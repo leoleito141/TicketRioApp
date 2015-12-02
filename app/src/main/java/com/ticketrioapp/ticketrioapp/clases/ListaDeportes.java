@@ -1,5 +1,6 @@
 package com.ticketrioapp.ticketrioapp.clases;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 
 
@@ -74,7 +75,8 @@ public class ListaDeportes extends AppCompatActivity {
         buttonMasculino.requestFocus();
         botonCerrarSesion = (Button)findViewById(R.id.buttonLogout);
         this.sexo = "Masculino";
-
+        buttonMasculino.setBackgroundColor(Color.argb(255,61,159,229));
+        buttonFemenino.setBackgroundColor(Color.argb(255,69,170,255));
         listViewDeportes = (ListView) findViewById(R.id.listDeportes);
 
         listaDeportes = (ListView) findViewById(R.id.listDeportes);
@@ -92,7 +94,8 @@ public class ListaDeportes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 sexo = "Masculino";
-
+                buttonMasculino.setBackgroundColor(Color.argb(255,61,159,229));
+                buttonFemenino.setBackgroundColor(Color.argb(255,69,170,255));
                 try {
                     new WebServiceCall3().execute("https://sgem.com/rest/EventoDeportivoService/listarDeportes/1/Masculino");
                     //   new WebServiceCall3().execute(("http://"+ip+":8080/JatrickAppServer/rest/EquipoService/jugadores/" + equipo.toString()).replace(" ", "%20"));
@@ -110,6 +113,8 @@ public class ListaDeportes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 sexo = "Femenino";
+                buttonFemenino.setBackgroundColor(Color.argb(255,61,159,229));
+                buttonMasculino.setBackgroundColor(Color.argb(255,69,170,255));
 
                 try {
                     new WebServiceCall3().execute("https://sgem.com/rest/EventoDeportivoService/listarDeportes/1/Femenino");
@@ -147,7 +152,6 @@ public class ListaDeportes extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedpreferences.edit();
                 editor.clear();
                 editor.commit();
-//                finish();
 
                 Intent intent = new Intent(ListaDeportes.this, Login.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
