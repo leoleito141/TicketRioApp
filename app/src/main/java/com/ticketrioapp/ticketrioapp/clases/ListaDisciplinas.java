@@ -155,10 +155,9 @@ public class ListaDisciplinas extends AppCompatActivity {
                 JsonParser parser = new JsonParser();
                 JsonArray jArray = parser.parse(EntityUtils.toString(response.getEntity())).getAsJsonArray();
 
-                for (JsonElement String : jArray) {
-                    String d = gson.fromJson(String, String.class);
+                for (JsonElement elem : jArray) {
+                    String d = elem.getAsJsonObject().get("nombreDisciplina").getAsString();
                     ldisciplina.add(d);
-
                 }
 
 
